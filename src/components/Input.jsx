@@ -23,7 +23,7 @@ export const Input = () => {
     }
 
     return (
-        <div className="flex gap-4">
+        <div className="flex gap-4 w-fit sm:w-full mx-2 ">
             <input value={content} onChange={(e) => setContent(e.target.value)} />
             <button className="w-fit" onClick={handleCreateNote}>Create</button>
         </div>

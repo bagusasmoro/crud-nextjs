@@ -7,6 +7,6 @@
     @apply w-full p-3 border-2 rounded-lg focus:outline-none shadow;
   }
   button {
-    @apply w-full p-3 bg-slate-900 hover:bg-slate-700 text-white shadow rounded-lg
+    @apply w-fit sm:w-full p-3 bg-slate-900 hover:bg-slate-700 text-white shadow rounded-lg
   }
 }
