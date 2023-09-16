@@ -37,10 +37,12 @@ export const NoteCard = ({ id, content }) => {
         <div className="border-2 p-4 rounded-lg shadow m-2">
             {editMode ? (<input value={newContent || content} onChange={(e) => setNewContent(e.target.value)} />
             ) : (
-                <div className="min-h-[120px] max-w-fit">{content}</div>
+                <div className="min-h-[120px] max-w-fit text-lg">{`⚬ ${content}`}</div>
             )}
             <div className="flex gap-4">
-                {editMode ? (<button onClick={handleUpdateNote}>Update</button>
+                {editMode ? (<button onClick={handleUpdateNote}>Update
+
+                </button>
                 ) : (
                     <button onClick={() => setEditMode(true)}>Edit</button>
                 )}
